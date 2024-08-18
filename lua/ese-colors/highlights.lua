@@ -24,7 +24,7 @@ function M.get(c)
     Title = { fg = c.preProc },
     CursorColumn = { bg = c.cursor },
     VertSplit = { fg = c.number },
-    SignColumn = { bg = c.bg },
+    SignColumn = {},  -- empty to remove default bg
     LineNr = { fg = c.number },
     CursorLineNr = { fg = c.cursorNumber },
     NonText = { fg = c.nonText },
