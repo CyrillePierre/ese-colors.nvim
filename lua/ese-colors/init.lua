@@ -8,6 +8,7 @@ M.config = {
     light = "light",
   },
   configure_lualine = false,  -- use the custom configuration for lualine
+  set_default_background = true,  -- if false, it does not set the 'Normal' background color
 }
 
 function M.setup(config)
@@ -44,9 +45,13 @@ function M.load(theme)
   vim.g.colors_name = "ese"
   vim.o.termguicolors = true
 
-  -- local colors = {}
   local palette = M.get_palette(theme)
   local highlights = require('ese-colors.highlights').get(palette)
+
+  -- remove the default background colors depending of the option
+  if not M.config.set_default_background then
+    highlights.Normal.bg = nil
+  end
 
   for group, spec in pairs(highlights) do
     vim.api.nvim_set_hl(0, group, spec)

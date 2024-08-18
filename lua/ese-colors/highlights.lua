@@ -3,7 +3,7 @@ local M = {}
 function M.get(c)
   return {
     Normal = { fg = c.fg, bg = c.bg },
-    NormalFloat = { bg = c.bg },
+    NormalFloat = { bg = c.bg2 },
     Search = { fg = c.bg2, bg = c.search },
     CurSearch = { fg = c.bg2, bg = c.curSearch },
     Folded = { fg = c.fg3, bg = c.bg2 },
