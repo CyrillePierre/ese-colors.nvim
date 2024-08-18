@@ -34,7 +34,12 @@ colorscheme ese-light
 
 ```lua
 require('ese-colors').setup {
-    configure_lualine = false,  -- use a custom configuration for lualine
+  theme = "auto",  -- values: [auto, dark, light]. If auto, use background configuration.
+  background = {  -- use a specific theme depending of the value of vim.o.background
+    dark = "dark",
+    light = "light",
+  },
+  configure_lualine = false,  -- use the custom configuration for lualine
 }
 
 vim.cmd.colorscheme('ese')

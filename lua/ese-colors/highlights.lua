@@ -65,7 +65,7 @@ function M.get(c)
     doxygenParamName = { fg = c.commentKey },
 
     -- neotree
-    NeoTreeGitIgnored = { fg = c.ignore },
+    NeoTreeGitIgnored = { fg = c.inactive },
   }
 end
 

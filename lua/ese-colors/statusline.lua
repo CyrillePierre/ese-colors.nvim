@@ -1,5 +1,5 @@
 --{{{ Values "
-local colors = require('lualine.themes.ese.colors')
+local colors = require('ese-colors').get_palette()
 
 local conditions = {
   buffer_not_empty = function()
@@ -91,26 +91,26 @@ add_left{
   color = function()
     -- auto change color according to neovims mode
     local mode_color = {
-      n = colors.red,
-      i = colors.green,
-      v = colors.blue,
-      ['␖'] = colors.blue,
-      V = colors.blue,
-      c = colors.magenta,
-      no = colors.red,
-      s = colors.orange,
-      S = colors.orange,
-      ['␓'] = colors.orange,
-      ic = colors.yellow,
-      R = colors.violet,
-      Rv = colors.violet,
-      cv = colors.red,
-      ce = colors.red,
-      r = colors.cyan,
-      rm = colors.cyan,
-      ['r?'] = colors.cyan,
-      ['!'] = colors.red,
-      t = colors.red,
+      n = colors.operator,
+      i = colors.ok,
+      v = colors.info,
+      ['␖'] = colors.info,
+      V = colors.info,
+      c = colors.warn,
+      no = colors.operator,
+      s = colors.statement,
+      S = colors.statement,
+      ['␓'] = colors.statement,
+      ic = colors.special,
+      R = colors.structure,
+      Rv = colors.structure,
+      cv = colors.operator,
+      ce = colors.operator,
+      r = colors.constant,
+      rm = colors.constant,
+      ['r?'] = colors.constant,
+      ['!'] = colors.operator,
+      t = colors.operator,
     }
     return {fg = mode_color[vim.fn.mode()], gui = 'bold'}
   end,
@@ -120,16 +120,16 @@ add_left{
 add_left{
   'branch',
   icon = '',
-  color = {fg = colors.violet, gui = 'bold'},
+  color = {fg = colors.type, gui = 'bold'},
 }
 
 add_left{
   'diff',
 	symbols = {added = '+', modified = '~', removed = '-'},
   diff_color = {
-    added = {fg = colors.green},
-    modified = {fg = colors.orange},
-    removed = {fg = colors.red},
+    added = {fg = colors.add, gui = 'bold'},
+    modified = {fg = colors.change, gui = 'bold'},
+    removed = {fg = colors.delete, gui = 'bold'},
   },
   cond = conditions.hide_in_width,
 	padding = {left = 0},
@@ -170,7 +170,6 @@ add_right{
     return msg
   end,
   icon = '󱤵',
-  -- color = {fg = '#bbbbbb', gui = 'bold'},
 }
 --}}}
 
@@ -194,12 +193,12 @@ add_right{
 
 add_right{
 	'location',
+	color = {gui = 'bold'},
 	padding = {left = 0},
 }
 
 add_right{
 	'progress',
-	color = {fg = colors.fg, gui = 'bold'},
 	padding = {left = 1},
 }
 
@@ -207,7 +206,7 @@ add_right{
   'o:encoding',
   fmt = string.lower,
   cond = conditions.hide_in_width,
-  color = {fg = colors.green, gui = 'bold'},
+  color = {fg = colors.string, gui = 'bold'},
 	padding = {left = 1},
 }
 
@@ -215,16 +214,16 @@ add_right{
   'fileformat',
   fmt = string.lower,
   icons_enabled = true,
-  color = {fg = colors.green, gui = 'bold'},
+  color = {fg = colors.type, gui = 'bold'},
 }
 
 add_right{
   'diagnostics',
   sources = {'nvim_lsp', 'nvim_diagnostic'},
   diagnostics_color = {
-    color_error = {fg = colors.red},
-    color_warn = {fg = colors.yellow},
-    color_info = {fg = colors.cyan},
+    color_error = {fg = colors.error, gui = 'bold'},
+    color_warn = {fg = colors.warn, gui = 'bold'},
+    color_info = {fg = colors.info, gui = 'bold'},
   },
 }
 --}}}

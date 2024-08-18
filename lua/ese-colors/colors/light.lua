@@ -16,6 +16,7 @@ return {
   menu          = "#e6f0f0",
   menuSel       = "#c7e0e0",
 
+	inactive      = '#606060',
   nonText       = "#2c57a8",
   number        = "#b5b0a2",
   cursorNumber  = "#5b4f30",
@@ -43,5 +44,4 @@ return {
   add           = "#6ae12d",
   change        = "#ffba4c",
   delete        = "#ee5757",
-  ignore        = "#6c6c6c",
 }
