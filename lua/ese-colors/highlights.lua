@@ -19,7 +19,7 @@ function M.get(c)
     Todo = { fg = c.bg2, bg = c.special },
     WildMenu = { bg = c.visual },
     OverLength = { bg = c.discreteWarn },
-    ColorColumn = { bg = c.bg2 },
+    ColorColumn = { bg = c.bg3 },
     MatchParen = { fg = c.constant, bold = true },
     Title = { fg = c.preProc },
     CursorColumn = { bg = c.cursor },

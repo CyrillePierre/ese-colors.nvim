@@ -4,7 +4,8 @@ return {
   fg3           = "#D0D0D0",
 
   bg            = "#191919",  -- normal background
-  bg2           = "#262626",
+  bg2           = "#202328",
+  bg3           = "#262626",
 
   cursor        = "#000000",
   search        = "#c59a43",
