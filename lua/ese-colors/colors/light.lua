@@ -34,7 +34,7 @@ return {
   special       = "#8f6d27",
   operator      = "#a02f2f",
   constant      = "#0f856a",
-  string        = "#929f09",
+  string        = "#6f7807",
 
   error         = "#b11909",
   warn          = "#b914b0",
