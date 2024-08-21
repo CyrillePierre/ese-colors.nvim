@@ -28,6 +28,7 @@ function M.get(c)
     LineNr = { fg = c.number },
     CursorLineNr = { fg = c.cursorNumber },
     NonText = { fg = c.nonText },
+    WinSeparator = { fg = c.number },
 
     -- Code
     Comment = { fg = c.comment },
