@@ -46,23 +46,28 @@ function M.get(c)
 
     -- LSP
     DiagnosticError = { fg = c.error },
-    DiagnosticWarn = { fg = c.warn },
-    DiagnosticInfo = { fg = c.info },
-    DiagnosticHint = { fg = c.hint },
-    DiagnosticOk = { fg = c.ok },
+    DiagnosticWarn  = { fg = c.warn  },
+    DiagnosticInfo  = { fg = c.info  },
+    DiagnosticHint  = { fg = c.hint  },
+    DiagnosticOk    = { fg = c.ok    },
+    DiagnosticUnderlineError = { sp = c.error, undercurl = true },
+    DiagnosticUnderlineWarn  = { sp = c.warn,  undercurl = true },
+    DiagnosticUnderlineInfo  = { sp = c.info,  underline = true },
+    DiagnosticUnderlineHint  = { sp = c.hint,  underline = true },
+    DiagnosticUnderlineOk    = {},
 
-    DiffAdd = { fg = c.bg2, bg = c.add },
+    DiffAdd    = { fg = c.bg2, bg = c.add    },
     DiffDelete = { fg = c.bg2, bg = c.delete },
     DiffChange = { fg = c.bg2, bg = c.change },
 
     -- git gutter
-    GitGutterAdd = { fg = c.add },
+    GitGutterAdd    = { fg = c.add    },
     GitGutterChange = { fg = c.change },
     GitGutterDelete = { fg = c.delete },
 
     -- doxygen
-    doxygenComment = { fg = c.commentKey },
-    doxygenBrief = { fg = c.commentKey },
+    doxygenComment   = { fg = c.commentKey },
+    doxygenBrief     = { fg = c.commentKey },
     doxygenParamName = { fg = c.commentKey },
 
     -- neotree
