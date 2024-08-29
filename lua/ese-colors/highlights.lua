@@ -44,7 +44,7 @@ function M.get(c)
     Constant = { fg = c.constant },
     String = { fg = c.string },
 
-    -- LSP
+    -- diagnostics
     DiagnosticError = { fg = c.error },
     DiagnosticWarn  = { fg = c.warn  },
     DiagnosticInfo  = { fg = c.info  },
@@ -55,6 +55,9 @@ function M.get(c)
     DiagnosticUnderlineInfo  = { sp = c.info,  underline = true },
     DiagnosticUnderlineHint  = { sp = c.hint,  underline = true },
     DiagnosticUnderlineOk    = {},
+
+    -- lsp
+    ["@lsp.type.namespace"] = { fg = c.namespace },
 
     DiffAdd    = { fg = c.bg2, bg = c.add    },
     DiffDelete = { fg = c.bg2, bg = c.delete },

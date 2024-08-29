@@ -24,6 +24,7 @@ return {
 
   comment       = "#888f9e",
   commentKey    = "#5b669c",
+  namespace     = "#8ca68d",
   type          = "#5e8761",
   structure     = "#6d363f",
   func          = "#086392",
