@@ -24,7 +24,7 @@ return {
 
   comment       = "#77819b",
   commentKey    = "#afbcde",
-  namespace     = "#95908a",
+  namespace     = "#9b958e",
   type          = "#92bc96",
   structure     = "#c9929b",
   func          = "#d8e3fa",
@@ -34,7 +34,7 @@ return {
   preProc       = "#cf831b",
   special       = "#D7AF5F",
   operator      = "#d67474",
-  constant      = "#a0eedc",
+  constant      = "#97ecd9",
   string        = "#b6c342",
 
   error         = "#f32914",

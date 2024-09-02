@@ -36,7 +36,6 @@ function M.get(c)
     cppStructure = { fg = c.structure, bold = true },
     Function = { fg = c.func },
     Identifier = { fg = c.identifier },
-    ["@variable"] = { fg = c.variable },
     Statement = { fg = c.statement, bold = true },
     PreProc = { fg = c.preProc },
     Special = { fg = c.special },
@@ -56,7 +55,10 @@ function M.get(c)
     DiagnosticUnderlineHint  = { sp = c.hint,  underline = true },
     DiagnosticUnderlineOk    = {},
 
-    -- lsp
+    -- treesitter
+    ["@variable"] = { fg = c.variable },
+    ["@punctuation"] = { fg = c.special },
+    ["@lsp.punctuation"] = { fg = c.special },
     ["@lsp.type.namespace"] = { fg = c.namespace },
 
     DiffAdd    = { fg = c.bg2, bg = c.add    },
