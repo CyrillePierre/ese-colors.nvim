@@ -26,7 +26,7 @@ return {
   commentKey    = "#afbcde",
   namespace     = "#9b958e",
   type          = "#92bc96",
-  structure     = "#c9929b",
+  structure     = "#af7e8e",
   func          = "#d8e3fa",
   identifier    = "#ebe2c2",
   variable      = "#e5c6a5",
