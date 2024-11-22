@@ -54,6 +54,7 @@ function M.get(c)
     DiagnosticUnderlineInfo  = { sp = c.info,  underline = true },
     DiagnosticUnderlineHint  = { sp = c.hint,  underline = true },
     DiagnosticUnderlineOk    = {},
+    DiagnosticDeprecated     = { sp = c.info,  underline = true },
 
     -- treesitter
     ["@variable"] = { fg = c.variable },
