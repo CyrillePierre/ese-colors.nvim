@@ -4,7 +4,7 @@ return {
   fg3           = "#D0D0D0",
 
   bg            = "#191919",  -- normal background
-  bg2           = "#202328",
+  bg2           = "#232b39",
   bg3           = "#262626",
 
   cursor        = "#000000",
