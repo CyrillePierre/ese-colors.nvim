@@ -17,7 +17,7 @@ return {
   menuSel       = "#095c5c",
 
 	inactive      = '#909090',
-  nonText       = "#3366c4",
+  nonText       = "#312e27",
   number        = "#837c69",
   cursorNumber  = "#d9cfb6",
   specialKey    = "#5FAF87",
